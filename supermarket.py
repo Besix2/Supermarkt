@@ -7,7 +7,7 @@ import unicodedata
 from task import mongo_add
 
 # url = "https://api.foursquare.com/v3/places/search?ll=52.32%2C13.05&radius=5000&categories=17069&chains=fbac2d50-d890-0132-61d6-7a163eb2a6fc%2Ceaea0f66-7e6d-4c9c-acb2-2653f0c3ff5d%2C16cbce60-992b-0132-fd75-7a163eb2a6fc%2C2fcc4bf0-9c63-0132-6632-3c15c2dde6c8%2Cb0b33b60-d890-0132-61d2-7a163eb2a6fc%2Cabab48f8-0cc2-43e0-a175-05e18078ad1f%2Cfbaac220-d890-0132-61d6-7a163eb2a6fc%2Cfbabe960-d890-0132-61d6-7a163eb2a6fc"
-# api_key = "fsq3YmOpN5OSe3VVDGxhghb1fROqrD1U0ztU50aajR0DlQU="
+# api_key =
 
 # headers = {
 #     "accept": "application/json",
@@ -23,7 +23,7 @@ from task import mongo_add
 # # soup = BeautifulSoup(page.content, "html.parser")
 # # print(soup)
 def database():
-    client = pymongo.MongoClient("mongodb+srv://max916328:Mongodb_2020@cluster0.v24mw5y.mongodb.net/")
+    client = pymongo.MongoClient()
     return client['Sortiment']
 
 
